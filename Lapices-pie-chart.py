@@ -58,3 +58,20 @@ plt.ylabel("Tipo de Bolígrafo", fontsize=12)
 plt.grid(axis='x', alpha=0.3)
 plt.tight_layout()
 plt.show()
+
+
+# --- Tarea 3: Ranking de popularidad de bolígrafos ---
+item_sales = pen_sales_df["Item"].value_counts()
+
+# Ordena en orden descendente
+item_sales_sorted = item_sales.sort_values(ascending=True)
+
+# Grafica el ranking de popularidad
+plt.figure(figsize=(10, 6))
+item_sales_sorted.plot(kind='barh', color='green', edgecolor='black')
+plt.title("Top-Selling Pens", fontsize=14)
+plt.xlabel("Number of Sales", fontsize=12)
+plt.ylabel("Pen Type", fontsize=12)
+plt.grid(axis='x', alpha=0.3)
+plt.tight_layout()
+plt.show()
