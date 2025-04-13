@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt  # gráficos
 import string  # para limpiar texto
 
 # cargar datos
-file_path = "./Data/Pen Sales Data.xlsx"
+file_path = "../Data/Pen Sales Data.xlsx"
 pen_sales_df = pd.read_excel(file_path, sheet_name="Pen Sales")
 
 

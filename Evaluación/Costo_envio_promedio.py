@@ -1,9 +1,9 @@
 import pandas as pd  # manejo de datos
-import matplotlib.pyplot as plt 
+import matplotlib.pyplot as plt
 
 
 # cargar datos
-file_path = "./Data/Pen Sales Data.xlsx"
+file_path = "../Data/Pen Sales Data.xlsx"
 pen_sales_df = pd.read_excel(file_path, sheet_name="Pen Sales")
 
 
